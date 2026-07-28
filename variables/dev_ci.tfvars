@@ -1,11 +1,10 @@
 #------------------------------------------ Global Variables --------------------------------------------------------#
-project_name = "TF"
+#project_code = "TF"
 application  = "tf-app"
 project      = "TF"
-backup       = "NonProd"
 owner        = "praveen.cherukuri@veen.com"
 app_owner    = "praveen.cherukuri@veen.com"
-description  = "This is a test VPC created by Terraform module"
+description  = "This is a test S3 created by Terraform module"
 
 environment_code = "T1"
 application_code = "TF"
@@ -34,7 +33,7 @@ replication_rules        = []
 lambda_notifications     = []
 sns_notifications        = []
 sqs_notifications        = []
-eventbridge_enabled      = []
+eventbridge_enabled      = false
 website_enabled          = true
 index_document           = "index.html"
 error_document           = "error.html"

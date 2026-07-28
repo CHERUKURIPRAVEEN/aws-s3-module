@@ -54,6 +54,41 @@ variable "tags" {
   }
 }
 
+variable "project" {
+  description = "Project for which EC2 instance is being created"
+  type        = string
+  default     = ""
+
+  validation {
+    condition     = length(var.project) <= 7 || var.project == ""
+    error_message = "Project value should be maximum of 7 characters or empty"
+  }
+}
+
+variable "owner" {
+  description = "Email address of the EC2 instance owner."
+  type        = string
+
+  validation {
+    condition     = can(regex("^[A-Za-z0-9._%+-]+@veen\\.com$", var.owner))
+    error_message = "Owner email must be a valid @veen.com address."
+  }
+}
+
+variable "app_owner" {
+  description = "Email address of the application owner."
+  type        = string
+
+  validation {
+    condition     = can(regex("^[A-Za-z0-9._%+-]+@veen\\.com$", var.app_owner))
+    error_message = "Application owner email must be a valid @veen.com address."
+  }
+}
+
+variable "description" {
+  description = "Description for which SG is being created"
+  type        = string
+}
 
 #########################################
 # General

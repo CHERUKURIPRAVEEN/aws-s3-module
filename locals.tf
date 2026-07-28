@@ -6,6 +6,9 @@ locals {
     {
       application      = var.application
       environment      = var.environment
+      project          = var.project
+      owner            = var.owner
+      app_owner        = var.app_owner
       application_code = var.application_code
       environment_code = var.environment_code
     },
