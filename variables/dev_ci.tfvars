@@ -1,0 +1,44 @@
+#------------------------------------------ Global Variables --------------------------------------------------------#
+project_name = "TF"
+application  = "tf-app"
+project      = "TF"
+backup       = "NonProd"
+owner        = "praveen.cherukuri@veen.com"
+app_owner    = "praveen.cherukuri@veen.com"
+description  = "This is a test VPC created by Terraform module"
+
+environment_code = "T1"
+application_code = "TF"
+#------------------------------------------ S3 Variables --------------------------------------------------------#
+region                   = "us-east-1"
+environment              = "Dev"
+create_bucket            = true
+bucket_name              = "tf-test-bucket-2024"
+force_destroy            = true
+enable_versioning        = true
+mfa_delete               = false
+enable_encryption        = true
+kms_key_arn              = null
+bucket_key_enabled       = true
+object_ownership         = "BucketOwnerEnforced"
+block_public_acls        = true
+ignore_public_acls       = true
+block_public_policy      = true
+restrict_public_buckets  = true
+lifecycle_rules          = []
+enable_logging           = true
+logging_bucket           = "tf-test-bucket-2024"
+logging_prefix           = "logs/"
+replication_role_arn     = null
+replication_rules        = []
+lambda_notifications     = []
+sns_notifications        = []
+sqs_notifications        = []
+eventbridge_enabled      = []
+website_enabled          = true
+index_document           = "index.html"
+error_document           = "error.html"
+enable_cors              = true
+cors_rules               = []
+enforce_ssl_requests     = true
+bucket_policy_statements = []
