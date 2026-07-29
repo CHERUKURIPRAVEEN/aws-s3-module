@@ -11,6 +11,7 @@ locals {
       app_owner        = var.app_owner
       application_code = var.application_code
       environment_code = var.environment_code
+      description      = var.description
     },
     var.tags
   )
