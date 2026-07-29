@@ -1,23 +1,21 @@
-terraform-aws-s3/
-│
-├── versions.tf
-├── variables.tf
-├── locals.tf
-├── main.tf
-├── encryption.tf
-├── versioning.tf
-├── ownership.tf
-├── public_access.tf
-├── lifecycle.tf
-├── logging.tf
-├── replication.tf
-├── notification.tf
-├── website.tf
-├── cors.tf
-├── policy.tf
-├── outputs.tf
-├── README.md
-└── examples/
+## aws-s3-module
+- versions.tf
+- variables.tf
+- locals.tf
+- main.tf
+- encryption.tf
+- versioning.tf
+- ownership.tf
+- public_access.tf
+- lifecycle.tf
+- logging.tf
+- replication.tf
+- notification.tf
+- website.tf
+- cors.tf
+- policy.tf
+- outputs.tf
+- README.md
 
 This version follows enterprise Terraform practices:
 
