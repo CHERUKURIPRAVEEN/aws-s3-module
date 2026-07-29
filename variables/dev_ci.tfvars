@@ -1,10 +1,10 @@
 #------------------------------------------ Global Variables --------------------------------------------------------#
 #project_code = "TF"
-application  = "tf-app"
-project      = "TF"
-owner        = "praveen.cherukuri@veen.com"
-app_owner    = "praveen.cherukuri@veen.com"
-description  = "This is a test S3 created by Terraform module"
+application = "tf-app"
+project     = "TF"
+owner       = "praveen.cherukuri@veen.com"
+app_owner   = "praveen.cherukuri@veen.com"
+description = "This is a test S3 created by Terraform module"
 
 environment_code = "T1"
 application_code = "TF"
